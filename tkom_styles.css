@@ -1,0 +1,32 @@
+
+/* fucking around for now */
+
+h1 {
+    color: rgb(144, 48, 0);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    color:#a52a2a;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+.divbox {
+    width: 100%;
+    height: 5px;
+    background-color: #a52a2a;
+}
+.about {
+    background-color: rgb(250, 215, 194);
+  }
+
+
+img {
+    border: 3px solid #a52a2a;
+}
+
+li {
+    color: #a52a2a;
+}
