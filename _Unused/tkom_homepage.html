@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dive into 'The King of Mars,' a thrilling science fiction novel exploring adventure, intrigue, and the mysteries of the Red Planet.">
+    <meta name="keywords" content="The King of Mars, Science Fiction, Sci-Fi Novel, Mars Adventure">
+    <meta name="author" content="Your Name">
+    <title>The King of Mars - A Sci-Fi Adventure</title>
+    <link rel="stylesheet" href="tkom_styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden-header {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-grey-100">
+    <header id="header" class="fixed top-0 left-0 w-full bg-white shadow-md p-4 transition-transform">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Site Title -->
+            <h1 class="text-xl font-bold text-center">The King of Mars</h1>
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#book">The Book</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://instagram.com/therealkingofmars" target="_blank">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to The King of Mars</h2>
+                <p>A thrilling science fiction journey to the Red Planet.</p>
+                <a href="#book" class="btn">Learn More</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About the Author</h2>
+            <img src="tkom_assets/photo_chrisjupitz_alley.png" alt="Chris Jupitz wearing a green, black, and tan plaid shirt stands in a narrow red brick alleyway. He has a smirk on his face and his eyes are looking away to the left." width="180">
+            <img src="tkom_assets/photo_chrisjupitz_longhair.png" alt="">
+            <p>Chris Jupitz is a writer based in Los Angeles. <em>The King of Mars</em> is his first novel.</p>
+        </section>
+
+        <!-- The Book Section -->
+        <section id="book" class="book">
+            <h2>About the Book</h2>
+            <img src="tkom_assets\art_cnf_symbol_atah.png" alt="The Symbol of Atah - A crude red half circle above a red upward chevron above an arc." width="90">
+            <p><em>The King of Mars</em> is a gripping science fiction novel that takes you on a journey of discovery, danger, and unexpected heroism on the Red Planet.</p>
+            
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The King of Mars. All rights reserved.</p>
+        <p>Follow us on <a href="https://instagram.com/therealkingofmars" target="_blank">@therealkingofmars</a></p>
+    </footer>
+
+    <script>
+        let lastScrollY = window.scrollY;
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down, hide header
+                header.classList.add("hidden-header");
+            } else {
+                // Scrolling up, show header
+                header.classList.remove("hidden-header");
+            }
+            lastScrollY = window.scrollY;
+        });
+    </script>
+</body>
+
+</html>

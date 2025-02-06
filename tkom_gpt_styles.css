@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7d2412;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #7d2412;
+    padding: 10px;
+}
+
+#home {
+    border-top: #ffcc00 solid 5px;
+    border-bottom: #ffcc00 solid 5px;
+}
+
+nav h1 {
+    margin: 0;
+    padding-top:10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+nav p {
+    font-size: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#hero-photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Optional: Adds a slight dark overlay for readability */
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-top: auto;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: #fdd329e6;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ISSUES HERE */
+.description {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: smaller;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#books {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#books img {
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+    border: #ffffff50 solid 3px;
+}
+
+#about {
+    background-color: #222;
+    border-top: #ffffff solid 5px;
+    border-bottom: #ffffff solid 5px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#about img {
+    max-height: 300px;
+    width: auto;
+    margin-top: auto;
+    border: #ffffff3f solid 3px;
+}
+
+#contact {
+    border-top: #ffcc00 5px solid;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+footer {
+    background-color: #1e1e1e;
+    border-top: #ffcc00 5px solid;
+    padding: 10px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+   
+}
+
+footer p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+}
