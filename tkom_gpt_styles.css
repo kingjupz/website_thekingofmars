@@ -1,5 +1,6 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #7d2412;
@@ -7,6 +8,7 @@ body {
     text-align: center;
 }
 
+/* Header Elements */
 header {
     background-color: #7d2412;
     padding: 10px;
@@ -43,6 +45,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -82,7 +85,7 @@ nav ul li a {
     z-index: 1;
     max-width: 800px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Optional: Adds a slight dark overlay for readability */
+    background: rgba(0, 0, 0, 0.705); /* Optional: Adds a slight dark overlay for readability */
     border-radius: 10px;
 }
 
@@ -107,7 +110,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
-/* ISSUES HERE */
+/* Books Section */
 .description {
     font-family: 'Times New Roman', Times, serif;
     font-size: smaller;
@@ -120,15 +123,22 @@ nav ul li a {
 #books {
     padding-top: 4%;
     padding-bottom: 4%;
+    background: radial-gradient(circle, rgba(30, 7, 1, 0.755)0%, rgba(0,0,0,1)100%)
 }
 
 #books img {
-    width: 150px;
+    width: 25%;
     height: auto;
     margin-top: 15px;
-    border: #ffffff50 solid 3px;
+    border: rgba(6, 4, 4, 0.702) solid 5px;
+    border-radius: 50%;
 }
 
+.pop-shadow {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+/* About the author section */
 #about {
     background-color: #222;
     border-top: #ffffff solid 5px;
@@ -150,6 +160,8 @@ nav ul li a {
     padding-bottom: 4%;
 }
 
+
+/* Footer Section */
 footer {
     background-color: #1e1e1e;
     border-top: #ffcc00 5px solid;
