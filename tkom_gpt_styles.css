@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 /* Header Elements */
 header {
     background-color: #7d2412;
@@ -112,9 +116,9 @@ nav ul li a {
 
 /* Books Section */
 .description {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: smaller;
-    max-width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 
@@ -148,7 +152,7 @@ nav ul li a {
 }
 
 #about img {
-    max-height: 300px;
+    max-height: 275px;
     width: auto;
     margin-top: auto;
     border: #ffffff3f solid 3px;
