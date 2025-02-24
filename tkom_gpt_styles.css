@@ -9,7 +9,7 @@ body {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 /* Header Elements */
@@ -144,9 +144,9 @@ nav ul li a {
 
 /* About the author section */
 #about {
-    background-color: #222;
-    border-top: #ffffff solid 5px;
-    border-bottom: #ffffff solid 5px;
+    background: radial-gradient(circle, rgba(26, 26, 26, 0.896)0%, rgb(0, 0, 0)100%);
+    background-color: black;
+    border-top: #ffcc00 solid 5px;
     padding-top: 4%;
     padding-bottom: 4%;
 }
@@ -155,7 +155,7 @@ nav ul li a {
     max-height: 275px;
     width: auto;
     margin-top: auto;
-    border: #ffffff3f solid 3px;
+    border: rgba(0, 0, 0, 0.706) solid 3px;
 }
 
 #contact {
